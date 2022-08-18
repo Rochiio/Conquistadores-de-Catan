@@ -1,0 +1,4 @@
+package Jugadores
+
+interface Jugador {
+}
