@@ -27,4 +27,18 @@ object Aleatories {
         return (1..6).random()
     }
 
+    /***
+     * Devuelve un número aleatorio entre el 1 y el 3
+     */
+    fun getAleatoryFil():Int{
+        return (1..3).random()
+    }
+
+    /***
+     * Devuelve un número aleatorio entre el 1 y el 4
+     */
+    fun getAleatoryCol():Int{
+        return (1..4).random()
+    }
+
 }

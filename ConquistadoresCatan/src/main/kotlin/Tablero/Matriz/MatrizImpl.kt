@@ -10,6 +10,11 @@ class MatrizImpl: ArrayList<ArrayList<Casillas>>(), Matriz {
     private val FILS = 3
 
 
+    override fun getPlayer(fil: Int, col: Int): Jugador? {
+        return this[fil][col].getJugadorCasilla()
+    }
+
+
     /**
      * Mostrar la matriz
      */

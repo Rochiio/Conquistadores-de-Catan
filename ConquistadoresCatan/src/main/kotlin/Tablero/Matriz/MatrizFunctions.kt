@@ -7,6 +7,11 @@ import Jugadores.Jugador
  */
 interface MatrizFunctions {
     /**
+     * Te devuelve el jugador que hay en esa casilla
+     */
+    fun getPlayer(fil:Int , col:Int):Jugador?
+
+    /**
      * Mostrar la matriz
      */
     fun show()
