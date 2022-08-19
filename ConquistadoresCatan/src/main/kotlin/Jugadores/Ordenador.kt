@@ -1,4 +1,4 @@
 package Jugadores
 
-class Ordenador:Jugador {
+class Ordenador:Jugador() {
 }

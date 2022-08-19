@@ -13,7 +13,6 @@ class Juego(var tablero: Matriz) {
      */
     fun init(){
        tablero.initMatriz()
-       tablero.show()
     }
 
 
@@ -21,11 +20,12 @@ class Juego(var tablero: Matriz) {
      * Hacer que los jugadores elijan sus casillas.
      */
     fun startGame(){
-        var ocupated =0
+        var ocupated= 0
             do {
+                tablero.show()
                 pedirPersona()
                 pedirOrdenador()
-                ocupated+2
+                ocupated+=2
             }while (ocupated<12)
     }
 
@@ -36,10 +36,11 @@ class Juego(var tablero: Matriz) {
     private fun pedirOrdenador() {
         var fil=0
         var col=0
+
+        println("El ordenador está eligiendo!🤖")
         do {
-            println("El ordenador está eligiendo!🤖")
-            fil = Aleatories.getAleatoryFil()
-            col = Aleatories.getAleatoryCol()
+            fil = Aleatories.getAleatoryFil()-1
+            col = Aleatories.getAleatoryCol()-1
         }while (tablero.getPlayer(fil,col)!=null)
         tablero.addPlayer(pc,fil,col)
     }
@@ -51,10 +52,11 @@ class Juego(var tablero: Matriz) {
     private fun pedirPersona() {
         var fil=0
         var col=0
-            do {
-                println("Jugador es su turno!🙋🏻‍")
-                fil = Input.selectNumberFil()
-                col = Input.selectNumberCol()
+
+        println("Jugador es su turno!🙋🏻‍")
+        do {
+                fil = Input.selectNumberFil()-1
+                col = Input.selectNumberCol()-1
             }while (tablero.getPlayer(fil,col)!=null)
         tablero.addPlayer(persona,fil,col)
     }

@@ -1,4 +1,4 @@
 package Jugadores
 
-class Humano: Jugador {
+class Humano: Jugador() {
 }
