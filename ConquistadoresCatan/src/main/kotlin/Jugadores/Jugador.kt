@@ -2,6 +2,9 @@ package Jugadores
 
 import Tablero.Materiales
 
+/**
+ * Clase base para los jugadores
+ */
 abstract class Jugador {
     private var madera = 0
     private var carbon = 0

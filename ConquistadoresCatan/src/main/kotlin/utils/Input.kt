@@ -2,9 +2,15 @@ package utils
 
 import java.util.*
 
+/**
+ * Para la entrada de datos.
+ */
 object Input {
     var sc: Scanner = Scanner(System.`in`)
 
+    /**
+     * Pedir el número de fila.
+     */
     fun selectNumberFil():Int{
         var fil=""
             do{
@@ -14,6 +20,10 @@ object Input {
         return Integer.parseInt(fil)
     }
 
+
+    /**
+     * Pedir el número de columna
+     */
     fun selectNumberCol():Int{
         var col=""
         do{

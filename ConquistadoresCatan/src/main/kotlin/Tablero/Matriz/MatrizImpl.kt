@@ -4,12 +4,16 @@ import Jugadores.Jugador
 import Tablero.Casillas
 import utils.Aleatories
 
-
+/**
+ * Clase de implementación de la matriz
+ */
 class MatrizImpl: ArrayList<ArrayList<Casillas>>(), Matriz {
     private val COLS = 4
     private val FILS = 3
 
-
+    /**
+     * Te devuelve el jugador o no que hay en la casilla pedida.
+     */
     override fun getPlayer(fil: Int, col: Int): Jugador? {
         return this[fil][col].getJugadorCasilla()
     }
