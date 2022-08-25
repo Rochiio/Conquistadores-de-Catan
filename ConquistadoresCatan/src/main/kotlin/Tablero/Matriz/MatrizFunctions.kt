@@ -1,11 +1,17 @@
 package Tablero.Matriz
 
 import Jugadores.Jugador
+import Tablero.Casillas
 
 /**
  * Funciones de la matriz
  */
 interface MatrizFunctions {
+    /**
+     * Te devuelve la casilla elegida.
+     */
+    fun getCasilla(fil:Int, col: Int):Casillas
+
     /**
      * Te devuelve el jugador que hay en esa casilla
      */

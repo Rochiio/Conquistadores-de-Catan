@@ -10,6 +10,9 @@ import utils.Aleatories
 class MatrizImpl: ArrayList<ArrayList<Casillas>>(), Matriz {
     private val COLS = 4
     private val FILS = 3
+    override fun getCasilla(fil: Int, col: Int): Casillas {
+        return this[fil][col]
+    }
 
     /**
      * Te devuelve el jugador o no que hay en la casilla pedida.

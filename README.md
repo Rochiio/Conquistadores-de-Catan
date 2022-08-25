@@ -24,10 +24,6 @@ de dichas casillas.
 
 
 ## Ganará el primero que consiga llegar a 20 en todos los recursos.
-### Se valora:
- - La elección de clases y la forma en que interactúan para implementar la solución.
- - Claridad y ajuste de las clases a lo pedido en el enunciado.
- - Se sigan los principios de abstracción y encapsulación de los objetos.
 
- ### Ejemplo de tablero y selección de la persona.
+### Ejemplo de tablero y selección de la persona.
  ![imagenEjemplo](./img/Ejemplo.PNG)

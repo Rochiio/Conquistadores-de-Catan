@@ -5,4 +5,5 @@ fun main(args: Array<String>) {
 
     game.init()
     game.startGame()
+    game.finished()
 }
