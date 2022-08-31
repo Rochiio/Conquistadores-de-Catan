@@ -1,6 +1,6 @@
 import Tablero.Matriz.MatrizImpl
 
-fun main(args: Array<String>) {
+fun main() {
    var game = Juego(MatrizImpl())
 
     game.init()

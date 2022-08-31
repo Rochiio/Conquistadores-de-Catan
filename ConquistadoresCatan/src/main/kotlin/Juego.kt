@@ -4,8 +4,11 @@ import Tablero.Casillas
 import Tablero.Matriz.Matriz
 import utils.Aleatories
 import utils.Input
+import javax.inject.Inject
 
-class Juego(var tablero: Matriz) {
+class Juego
+@Inject constructor(var tablero: Matriz) {
+
     private var persona = Humano()
     private var pc = Ordenador()
     private val COLS = 4
@@ -37,8 +40,8 @@ class Juego(var tablero: Matriz) {
      * Para que el ordenador elija sus casillas aleatoriamente.
      */
     private fun pedirOrdenador() {
-        var fil=0
-        var col=0
+        var fil: Int
+        var col: Int
 
         println("El ordenador está eligiendo!🤖")
         do {
@@ -53,8 +56,8 @@ class Juego(var tablero: Matriz) {
      * Para que la persona seleccione las casillas que quiere.
      */
     private fun pedirPersona() {
-        var fil=0
-        var col=0
+        var fil: Int
+        var col: Int
 
         println("Jugador es su turno!🙋🏻‍")
         do {
@@ -70,9 +73,25 @@ class Juego(var tablero: Matriz) {
     fun finished() {
         do{
             var number = Aleatories.getAleatoryDadoNumber()
-            println("Ha salido el número: $number🎲")
+            println("\nHa salido el número: $number🎲")
             getNumbersCasilla(number)
         }while (!persona.todoMasVeinte() && !pc.todoMasVeinte())
+            println(getWinner())
+    }
+
+    /**
+     * Método para saber quién es el ganado o si hay empate.
+     */
+    private fun getWinner():String {
+        var returns = if (persona.todoMasVeinte() && !pc.todoMasVeinte()){
+            "Ha ganado el humano🙋🏻!"
+        }else if(pc.todoMasVeinte() && !persona.todoMasVeinte()){
+            "Ha ganado el ordenador🤖!"
+        }else{
+            "Ha habido un empate!"
+        }
+
+        return returns
     }
 
 

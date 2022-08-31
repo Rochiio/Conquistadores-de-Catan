@@ -3,16 +3,25 @@ package Tablero.Matriz
 import Jugadores.Jugador
 import Tablero.Casillas
 import utils.Aleatories
+import javax.inject.Inject
 
 /**
  * Clase de implementación de la matriz
  */
-class MatrizImpl: ArrayList<ArrayList<Casillas>>(), Matriz {
+class MatrizImpl
+@Inject constructor(): Matriz() {
+
     private val COLS = 4
     private val FILS = 3
+
+
+    /**
+     * Devuelve la casilla elegida.
+     */
     override fun getCasilla(fil: Int, col: Int): Casillas {
         return this[fil][col]
     }
+
 
     /**
      * Te devuelve el jugador o no que hay en la casilla pedida.

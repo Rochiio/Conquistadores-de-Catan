@@ -12,8 +12,8 @@ object Input {
      * Pedir el número de fila.
      */
     fun selectNumberFil():Int{
-        var fil=""
-            do{
+        var fil: String
+        do{
             println("Elige una fila")
             fil = sc.next()
             }while (!fil.matches(Regex("[1-3]")))
@@ -25,7 +25,7 @@ object Input {
      * Pedir el número de columna
      */
     fun selectNumberCol():Int{
-        var col=""
+        var col: String
         do{
             println("Elige una columna")
             col = sc.next()

@@ -2,5 +2,5 @@ package Tablero.Matriz
 
 import Tablero.Casillas
 
-interface Matriz:MatrizFunctions{
+abstract class Matriz:MatrizFunctions, ArrayList<ArrayList<Casillas>>(){
 }
