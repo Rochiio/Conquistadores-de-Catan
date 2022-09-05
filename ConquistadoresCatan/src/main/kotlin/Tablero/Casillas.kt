@@ -3,7 +3,9 @@ package Tablero
 import Jugadores.Humano
 import Jugadores.Jugador
 
-
+/**
+ * Clase de la casilla del tablero.
+ */
 class Casillas {
     private lateinit var material: Materiales
     private var jugador: Jugador? =null

@@ -34,30 +34,4 @@ abstract class Jugador {
         }
     }
 
-    /**
-     * Getters & Setters
-     */
-    fun getMadera(): Int {
-        return madera
-    }
-
-    fun setMadera(madera: Int) {
-        this.madera = madera
-    }
-
-    fun getCarbon(): Int {
-        return carbon
-    }
-
-    fun setCarbon(carbon: Int) {
-        this.carbon = carbon
-    }
-
-    fun getTrigo(): Int {
-        return trigo
-    }
-
-    fun setTrigo(trigo: Int) {
-        this.trigo = trigo
-    }
 }

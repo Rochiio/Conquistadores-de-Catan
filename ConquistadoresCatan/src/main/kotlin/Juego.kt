@@ -12,6 +12,7 @@ class Juego(var tablero: Matriz) {
     private val COLS = 4
     private val FILS = 3
 
+
     /**
      * Inicio: Crear la matriz.
      */
@@ -65,6 +66,7 @@ class Juego(var tablero: Matriz) {
         tablero.addPlayer(persona,fil,col)
     }
 
+
     /**
      * Método para saber cuando debe de acabar el programa
      */
@@ -76,6 +78,7 @@ class Juego(var tablero: Matriz) {
         }while (!persona.todoMasVeinte() && !pc.todoMasVeinte())
             println(getWinner())
     }
+
 
     /**
      * Método para saber quién es el ganado o si hay empate.
@@ -105,6 +108,7 @@ class Juego(var tablero: Matriz) {
             }
         }
     }
+
 
     /**
      * Añadir materiales al jugador correspondiente en caso de que
