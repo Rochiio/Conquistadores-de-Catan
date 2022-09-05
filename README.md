@@ -1,12 +1,12 @@
-# Conquistadires de Catán
+# Conquistadores de Catán
 
-Vamos a implementar un juego conocido como Conquistadores de Catán. Nuestro juego será mucho más
-sencillo que el original y sólo permitirá a dos jugadores: un humano y el ordenador.
+Implementación de un juego conocido como Conquistadores de Catán.
+Este juego será mucho más sencillo que el original y sólo permitirá a dos jugadores: un humano y el ordenador.
 
 
 ### El funcionamiento es el siguiente:
-El juego consiste en un mapa de 3x4 casillas, en cada casilla habrá un recurso (trigo, madera y carbón); un
-jugador que será el dueño de esa casilla y un valor numérico entre 1 y 6 (valores de un dado).
+El juego consiste en un mapa de 3x4 casillas, en cada casilla habrá un recurso (trigo, madera y carbón);
+Un jugador que será el dueño de esa casilla y un valor numérico entre 1 y 6 (valores de un dado).
 Al principio se inicializará el tablero colocando en cada casilla un recurso (de forma aleatoria) y asignándole un
 valor (también de forma aleatoria entre 1 y 6).
 
