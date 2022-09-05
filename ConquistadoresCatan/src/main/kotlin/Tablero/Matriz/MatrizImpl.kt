@@ -3,13 +3,11 @@ package Tablero.Matriz
 import Jugadores.Jugador
 import Tablero.Casillas
 import utils.Aleatories
-import javax.inject.Inject
 
 /**
  * Clase de implementación de la matriz
  */
-class MatrizImpl
-@Inject constructor(): Matriz() {
+class MatrizImpl(): Matriz() {
 
     private val COLS = 4
     private val FILS = 3

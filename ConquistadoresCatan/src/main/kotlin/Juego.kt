@@ -4,10 +4,8 @@ import Tablero.Casillas
 import Tablero.Matriz.Matriz
 import utils.Aleatories
 import utils.Input
-import javax.inject.Inject
 
-class Juego
-@Inject constructor(var tablero: Matriz) {
+class Juego(var tablero: Matriz) {
 
     private var persona = Humano()
     private var pc = Ordenador()
