@@ -25,12 +25,10 @@ abstract class Jugador {
      * @param material saber que material hay en esa casilla.
      */
     fun addValorNumero(material: Materiales) {
-        if (material === Materiales.CARBON) {
-            carbon++
-        } else if (material === Materiales.TRIGO) {
-            trigo++
-        } else if (material === Materiales.MADERA) {
-            madera++
+        when(material){
+            Materiales.TRIGO -> trigo++
+            Materiales.CARBON -> carbon++
+            Materiales.MADERA -> madera++
         }
     }
 

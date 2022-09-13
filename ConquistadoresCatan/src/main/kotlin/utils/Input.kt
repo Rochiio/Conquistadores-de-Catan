@@ -1,12 +1,10 @@
 package utils
 
-import java.util.*
 
 /**
  * Para la entrada de datos.
  */
 object Input {
-    var sc: Scanner = Scanner(System.`in`)
 
     /**
      * Pedir el número de fila.
@@ -15,7 +13,7 @@ object Input {
         var fil: String
         do{
             println("Elige una fila")
-            fil = sc.next()
+            fil = readln()
             }while (!fil.matches(Regex("[1-3]")))
         return Integer.parseInt(fil)
     }
@@ -28,7 +26,7 @@ object Input {
         var col: String
         do{
             println("Elige una columna")
-            col = sc.next()
+            col = readln()
         }while (!col.matches(Regex("[1-4]")))
         return Integer.parseInt(col)
     }
